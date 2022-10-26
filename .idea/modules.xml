@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PigGameStarter.iml" filepath="$PROJECT_DIR$/.idea/modules/PigGameStarter.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PigGameStarter.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PigGameStarter.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PigGameStarter.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PigGameStarter.app.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PigGameStarter.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PigGameStarter.app.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PigGameStarter.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PigGameStarter.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PigGameStarterMiller.iml" filepath="$PROJECT_DIR$/.idea/modules/PigGameStarterMiller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PigGameStarterMiller.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PigGameStarterMiller.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PigGameStarterMiller.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PigGameStarterMiller.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PigGameStarterMiller.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PigGameStarterMiller.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PigGameStarterMiller.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PigGameStarterMiller.app.unitTest.iml" />
     </modules>
   </component>
 </project>

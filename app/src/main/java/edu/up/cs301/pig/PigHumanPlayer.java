@@ -3,6 +3,7 @@ package edu.up.cs301.pig;
 import edu.up.cs301.game.GameHumanPlayer;
 import edu.up.cs301.game.GameMainActivity;
 import edu.up.cs301.game.R;
+import edu.up.cs301.game.actionMsg.GameAction;
 import edu.up.cs301.game.infoMsg.GameInfo;
 
 import android.graphics.Color;
@@ -60,6 +61,31 @@ public class PigHumanPlayer extends GameHumanPlayer implements OnClickListener {
      */
     @Override
     public void receiveInfo(GameInfo info) {
+        System.out.println("test");
+        if (!(info instanceof PigGameState)){
+            flash(Color.RED, 1);
+            return;
+        }
+        PigGameState state = (PigGameState) info;
+        playerScoreTextView.setText("" + state.getPlayer1pts());
+        oppScoreTextView.setText("" + state.getPlayer2pts());
+        turnTotalTextView.setText("" +state.getPtsToAdd());
+
+        switch (state.getDieVal()){
+            case 1:
+                dieImageButton.setImageResource(R.drawable.face1);
+            case 2:
+                dieImageButton.setImageResource(R.drawable.face2);
+            case 3:
+                dieImageButton.setImageResource(R.drawable.face3);
+            case 4:
+                dieImageButton.setImageResource(R.drawable.face4);
+            case 5:
+                dieImageButton.setImageResource(R.drawable.face5);
+            case 6:
+                dieImageButton.setImageResource(R.drawable.face6);
+        }
+
         //TODO You will implement this method to receive state objects from the game
     }//receiveInfo
 
@@ -71,6 +97,13 @@ public class PigHumanPlayer extends GameHumanPlayer implements OnClickListener {
      * 		the button that was clicked
      */
     public void onClick(View button) {
+        GameAction action;
+        if (button instanceof Button){
+            action = new PigHoldAction(this);
+        }
+        else if (button instanceof ImageButton){
+            action = new PigRollAction(this);
+        }
         //TODO  You will implement this method to send appropriate action objects to the game
     }// onClick
 
